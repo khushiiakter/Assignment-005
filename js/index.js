@@ -13,18 +13,21 @@ document.getElementById('donate-btn').addEventListener('click', function(){
     const accountBalance = getTextFieldById('account-balance');
     
 
-    if(inputAmount <= 0 || isNaN(inputAmount)){
-        alert("Invalid number.");
-        return;
-    }
-    
     const newCurrentDonation = inputAmount + currentDonation;
     const newAccountBalance = accountBalance - inputAmount;
-    
-    
+    const modal = document.getElementById('my_modal_1');
+
+    if(inputAmount <= 0 || isNaN(inputAmount) || currentDonation > accountBalance){
+        alert('Invalid Donation Amount.');
+        return;
+    }else{   
+        modal.showModal();
+    };
+      
     document.getElementById('current-donation').innerText = newCurrentDonation;
     document.getElementById('account-balance').innerText = newAccountBalance;
-
-})
+ 
+  
+});
 
 
