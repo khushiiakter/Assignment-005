@@ -49,7 +49,7 @@
 
       <div class="flex items-center justify-center">
         <img src="./assets/coin.png" alt="">
-        <p class="text-xl font-medium ml-3 leading-6  text-[#111111B3]">5500 BDT</p>
+        <p class="text-xl font-medium ml-3 leading-6  text-[#111111B3]"><span id="account-balance">5500</span> BDT</p>
       </div>
 
   </nav>
@@ -64,7 +64,7 @@
   </header>
   
   
-  <main class="container mx-auto px-6 space-y-8">
+  <main class="container mx-auto px-6 space-y-8 mb-10">
     <!-- Donate for Flood at Noakhali, Bangladesh -->
     <section>
       <div class=" bg-white p-8 border rounded-2xl border-solid border-[#1111111A]">
@@ -76,7 +76,7 @@
             <!-- donate amount -->
             <div class="flex items-center justify-center py-2.5 px-4 bg-[rgba(17,17,17,0.05)] rounded-lg w-fit mb-4">
               <img src="./assets/coin.png" alt="">
-              <p class="text-base font-normal ml-2 leading-5  text-[#111111B3]">0 BDT</p>
+              <p class="text-base font-medium ml-2 leading-5  text-[#111111B3]"><span id="current-donation">99</span> BDT</p>
             </div>
               <!-- donate amount -->
 
@@ -86,9 +86,9 @@
             </p>
             
             
-            <input class="border border-solid border-[#1111111A] p-4 rounded-lg bg-white w-full " type="number" placeholder="Write Donation Amount" >
+            <input id="input-amount" class="border border-solid border-[#1111111A] p-4 rounded-lg bg-white w-full " type="number" placeholder="Write Donation Amount" >
             <br>
-            <button class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary w-full">Donate Now</button>
+            <button id="donate-btn" class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary w-full">Donate Now</button>
           </div>
         </div>
       </div>
@@ -106,7 +106,7 @@
             <!-- donate amount -->
             <div class="flex items-center justify-center py-2.5 px-4 bg-[rgba(17,17,17,0.05)] rounded-lg w-fit mb-4">
               <img src="./assets/coin.png" alt="">
-              <p class="text-base font-normal ml-2 leading-5  text-[#111111B3]">0 BDT</p>
+              <p class="text-base font-normal ml-2 leading-5  text-[#111111B3]"><span>0</span> BDT</p>
             </div>
               <!-- donate amount -->
 
@@ -135,7 +135,7 @@
             <!-- donate amount -->
             <div class="flex items-center justify-center py-2.5 px-4 bg-[rgba(17,17,17,0.05)] rounded-lg w-fit mb-4">
               <img src="./assets/coin.png" alt="">
-              <p class="text-base font-normal ml-2 leading-5  text-[#111111B3]">0 BDT</p>
+              <p class="text-base font-normal ml-2 leading-5  text-[#111111B3]"><span>0</span> BDT</p>
             </div>
               <!-- donate amount -->
 
@@ -156,6 +156,9 @@
 
 
   </main>
+  <script src="./js/utilities.js"></script>
+  <script src="./js/index.js"></script>
+
 
 
     
