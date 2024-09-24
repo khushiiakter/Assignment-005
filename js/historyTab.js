@@ -1,4 +1,4 @@
-// history
+// history tab
 const historyTab = document.getElementById('history-tab');
 const donationTab = document.getElementById('donation-tab');
 

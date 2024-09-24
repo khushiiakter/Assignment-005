@@ -39,8 +39,7 @@ document.getElementById('donate-btn-2').addEventListener('click', function(){
     const inputAmount = getInputFieldValueById('input-amount-2');
     const currentDonation = getTextFieldById('current-donation-2');
     const accountBalance = getTextFieldById('account-balance');
-    
-
+  
     const newCurrentDonation = inputAmount + currentDonation;
     const newAccountBalance = accountBalance - inputAmount;
     const modal = document.getElementById('my_modal_1');

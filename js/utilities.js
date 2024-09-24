@@ -17,6 +17,7 @@ window.addEventListener('scroll', function(){
         navbar.classList.add("backdrop-blur", "bg-[#F9F7F3]");
     }
 });
+// blog button action part
 document.getElementById('BlogPage').addEventListener('click', function(){
     window.location.href = "./blog.html";
 });
