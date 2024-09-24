@@ -56,15 +56,19 @@
     <!-- nav section end -->
   <div class="banner-btn-section my-8">
     <div class="container-btn text-center space-x-4">
-      <button class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary">Donation</button>
 
-      <button class="text-xl font-medium	leading-6	py-4 px-8 rounded-lg text-[#111111B3] border border-solid border-[#1111114D]">History</button>
+      <button id="donation-tab" class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary">Donation</button>
+
+      <button id="history-tab" class="text-xl font-medium	leading-6	py-4 px-8 rounded-lg text-[#111111B3] border border-solid border-[#1111114D]">History</button>
+
     </div>
   </div>
   </header>
+  <!-- history container -->
   
   
-  <main class="container mx-auto px-6 space-y-8 mb-10">
+  
+  <main id="donationTabPart" class="container mx-auto px-6 space-y-8 mb-10">
     <!-- Donate for Flood at Noakhali, Bangladesh -->
     <section id="section1" class="donate-section">
       <div class=" bg-white p-8 border rounded-2xl border-solid border-[#1111111A]">
@@ -81,7 +85,7 @@
             <!-- class="current-donation" -->
               <!-- donate amount -->
 
-            <h1 class="text-xl font-bold mb-4 leading-8 text-secondary">Donate for Flood at Noakhali, Bangladesh</h1>
+            <h1 id="donateName1" class="text-xl font-bold mb-4 leading-8 text-secondary">Donate for Flood at Noakhali, Bangladesh</h1>
             <p class="text-base font-light leading-[26px] text-[#111111B3] mb-6">
               The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
             </p>
@@ -131,7 +135,7 @@
             <!-- class="current-donation" -->
               <!-- donate amount -->
 
-            <h1 class="text-xl font-bold mb-4 leading-8 text-secondary">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <h1 class="text-xl font-bold mb-4 leading-8 text-secondary" id="donateName2">Donate for Flood Relief in Feni,Bangladesh</h1>
             <p class="text-base font-light leading-[26px] text-[#111111B3] mb-6">
               The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
             </p>
@@ -161,7 +165,7 @@
             <!-- class="current-donation" -->
               <!-- donate amount -->
 
-            <h1 class="text-xl font-bold mb-4 leading-8 text-secondary">Aid for Injured in the Quota Movement</h1>
+            <h1 class="text-xl font-bold mb-4 leading-8 text-secondary" id="donateName3">Aid for Injured in the Quota Movement</h1>
             <p class="text-base font-light leading-[26px] text-[#111111B3] mb-6">
               The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
             </p>
@@ -175,11 +179,7 @@
       </div>
     </section>
     <!-- Aid for Injured in the Quota Movement  -->
-    
-
-
-  </main>
-  <!-- modal -->
+    <!-- modal -->
   <dialog id="my_modal_1" class="modal">
     <div class="modal-box flex flex-col justify-center items-center gap-4">
       <h1 class="text-5xl text-black font-extrabold">Congrates!</h1>
@@ -193,6 +193,14 @@
   </dialog>
   <script src="./js/utilities.js"></script>
   <script src="./js/index.js"></script>
+
+
+  
+  
+  </main>
+  <div id="historyContainer" class="w-4/5	 mx-auto space-y-2">
+
+  </div>
 
 
 
