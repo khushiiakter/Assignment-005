@@ -23,3 +23,5 @@ donationTab.addEventListener('click', function(){
     document.getElementById('donationTabPart').classList.remove('hidden');
     document.getElementById('historyContainer').classList.add('hidden');
 });
+
+

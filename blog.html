@@ -1,1 +1,129 @@
-<h1>kjfdkfjndfkdjf</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind css & DaisyUI Links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e7a37b3213.js" crossorigin="anonymous"></script>
+   
+     <!-- Tailwind CSS Configuration -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#B4F461',
+                secondary: '#111111',
+                
+              },
+              fontFamily: {
+                Inter: 'Inter',
+              },
+            },
+          },
+        }
+      </script>
+
+
+</head>
+<body class="font-Inter box-border">
+    <header id="headerPart" class="sticky backdrop-blur top-0 z-[1000] pb-4">
+        <!-- nav section start -->
+        <nav id="navbar" class="flex items-center justify-between px-7 bg-[#F9F7F3] backdrop-blur py-4">
+    
+          <button id="HomePage" class="text-xl font-semibold	leading-6	py-3 px-8 bg-primary rounded-lg text-secondary">Home</button>
+    
+          <div class="flex items-center justify-center">
+            <img src="./assets/logo.png" alt="">
+            <h3 class="text-xl font-semi bold	leading-6 text-secondary ml-4">Donate Bangladesh</h3>
+          </div>
+    
+          <div class="flex items-center justify-center">
+            <img src="./assets/coin.png" alt="">
+            <p class="text-xl font-medium ml-3 leading-6  text-[#111111B3]"><span id="account-balance">5500</span> BDT</p>
+          </div>
+    
+      </nav>
+        <!-- nav section end -->
+      </header>
+
+    <main class="container mx-auto px-5 mt-5">
+        <section class="flex items-center gap-2 mb-8">
+            <h1 class="text-5xl font-extrabold">Important FAQ</h1>
+            <img src="./assets/icons8-faq-48.png" alt="">
+        </section>
+        <section class="space-y-2">
+            <details class="collapse border-2 bg-white border-solid border-gray-300">
+                <summary class="collapse-title text-2xl font-semibold py-6 px-8">What is the Document Object Model (DOM)?</summary>
+                <div class="collapse-content">
+                  <p>DOM means Document Object Model. It has three things- html, css and javascript.All this things create DOM. DOM makes the html like an object in javascript, so that we can make interactions with javascript. This object is a model of the whole html.By using DOM, we can get all the elements of html, makes so many changes, add many actions.DOM makes the experience better between users and the website.</p>
+                </div>
+              </details>
+
+
+              <details class="collapse border-2 bg-white border-solid border-gray-300">
+                <summary class="collapse-title text-2xl font-semibold py-6 px-8 ">How do you select an element from the DOM?</summary>
+                <div class="collapse-content">
+                  <p>We can select an element from the DOM  in many ways in javascript. There are many methods like - getElementById(), getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll() etc. First we write document then apply use a method to call the element. Example - document.getElementById('Element name');
+                    
+                  </p>
+                </div>
+              </details>
+              <details class="collapse border-2 bg-white border-solid border-gray-300">
+                <summary class="collapse-title text-2xl font-semibold py-6 px-8">What is event delegation in the context of the DOM, and why is it useful?</summary>
+                <div class="collapse-content">
+                  <p>HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+                    For example:
+                    <br>
+                    <ul>
+                        <li>1.The user selects, clicks, or hovers the cursor over a certain element.</li>
+                        <li>2.The user chooses a key on the keyboard.</li>
+                        <li>3.The user resizes or closes the browser window.</li>
+                        <li>4.A web page finishes loading.</li>
+                        <li>5.A form is submitted.</li>
+                        <li>6.A video is played, paused, or finishes.</li>
+                        <li>7.An error occurs.</li>
+                    </ul>
+                    
+                    </p>
+                </div>
+              </details>
+
+
+              <details class="collapse border-2 bg-white border-solid border-gray-300">
+                <summary class="collapse-title text-2xl font-semibold py-6 px-8">How do you manipulate an element's attributes and styles using the DOM?</summary>
+                <div class="collapse-content">
+                  <p>Each Element object in the DOM has properties and methods that we can use to interact with that element.
+
+                    The following are the most common and practical ways we might want to manipulate the Element object:
+                    <ol>
+                        <li>1.Change the Content of an Element</li>
+                        <li>2.Manipulate the Class Attribute</li>
+                        <li>3.Setting CSS Styles Using JavaScript</li>
+                        <li>4.Create, Add, and Remove Elements</li>
+                        <li>5.Insert Element at a Specific Position</li>
+                        <li>6.Manipulating Element Attributes</li>
+                        <li>7.Manipulating Data Attributes</li>
+                    </ol>
+                    </p>
+                </div>
+              </details>
+        </section>
+    </main>
+    <script>
+        document.getElementById('HomePage').addEventListener('click', function(){
+            window.location.href = "./index.html";
+        });
+    </script>
+</body>
+</html>
