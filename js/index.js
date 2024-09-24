@@ -95,7 +95,7 @@ document.getElementById('donate-btn-3').addEventListener('click', function(){
     // history part
     const historyItem = document.createElement('div');
     const donateName = document.getElementById('donateName3').innerText;
-    historyItem.className = " p-6 border border-solid border-[#1111111A] rounded-2xl bg-white";
+    historyItem.className = "md:p-6 p-4 border border-solid border-[#1111111A] rounded-2xl bg-white";
         historyItem.innerHTML = `
             <h3 class = "text-xl font-bold leading-8 text-secondary">${inputAmount} is Donated for ${donateName}</h3>           
             <p class = "text-base font-light leading-[26px] text-[#111111B3]">Date: ${

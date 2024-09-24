@@ -38,28 +38,28 @@
 <body class="font-Inter box-border">
   <header id="headerPart" class="sticky backdrop-blur top-0 z-[1000] pb-4">
     <!-- nav section start -->
-    <nav id="navbar" class="flex items-center justify-between px-7 bg-[#F9F7F3] backdrop-blur py-4">
+    <nav id="navbar" class="flex items-center justify-between px-4 md:px-7 bg-[#F9F7F3] backdrop-blur py-4">
 
-      <button id="BlogPage" class="text-xl font-semibold	leading-6	py-3 px-8 bg-primary rounded-lg text-secondary">Blog</button>
+      <button id="BlogPage" class="md:text-xl text-base font-semibold	leading-6 py-1	md:py-3 md:px-8 px-4 bg-primary rounded-lg text-secondary">Blog</button>
 
       <div class="flex items-center justify-center">
-        <img src="./assets/logo.png" alt="">
-        <h3 class="text-xl font-semi bold	leading-6 text-secondary ml-4">Donate Bangladesh</h3>
+        <img class="w-[38px] md:block hidden" src="./assets/logo.png" alt="">
+        <h3 class="md:text-xl text-lg font-semibold	leading-6 text-secondary md:ml-4 ml-3">Donate Bangladesh</h3>
       </div>
 
       <div class="flex items-center justify-center">
-        <img src="./assets/coin.png" alt="">
-        <p class="text-xl font-medium ml-3 leading-6  text-[#111111B3]"><span id="account-balance">5500</span> BDT</p>
+        <img class="md:block hidden" src="./assets/coin.png" alt="">
+        <p class="md:text-xl text-base font-medium md:ml-3  leading-6  text-[#111111B3]"><span id="account-balance">5500</span> BDT</p>
       </div>
 
-  </nav>
+    </nav>
     <!-- nav section end -->
-  <div class="banner-btn-section mt-4">
+  <div class="banner-btn-section md:mt-4">
     <div class="container-btn text-center space-x-4">
 
-      <button id="donation-tab" class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary">Donation</button>
+      <button id="donation-tab" class="md:text-xl text-base font-semibold	leading-6	md:py-4 py-3 px-5 md:px-8 bg-primary rounded-lg text-secondary">Donation</button>
 
-      <button id="history-tab" class="text-xl font-medium	leading-6	py-4 px-8 rounded-lg text-[#111111B3] border border-solid border-[#1111114D]">History</button>
+      <button id="history-tab" class="md:text-xl text-base font-medium	leading-6	md:py-4 py-3 px-5 md:px-8 rounded-lg text-[#111111B3] border border-solid border-[#1111114D]">History</button>
 
     </div>
   </div>
@@ -68,19 +68,19 @@
   
   
   
-  <main id="donationTabPart" class="container mx-auto px-6 space-y-8 mb-10">
+  <main id="donationTabPart" class="container mx-auto md:px-6 px-4 space-y-8 mb-10">
     <!-- Donate for Flood at Noakhali, Bangladesh -->
     <section id="section1" class="donate-section">
-      <div class=" bg-white p-8 border rounded-2xl border-solid border-[#1111111A]">
-        <div class="flex  md:flex-row flex-col ">
+      <div class=" bg-white md:p-8 p-5 border rounded-2xl border-solid border-[#1111111A]">
+        <div class="flex  md:flex-row flex-col">
           <img
             src="./assets/noakhali.png"
-            class=" rounded-xl shadow-2xl object-cover" />
-          <div class="ml-8 flex flex-col justify-between">
+            class=" rounded-xl shadow-2xl object-cover md:w-1/2" />
+          <div class="md:ml-8 md:mt-0 mt-6 flex flex-col justify-between md:w-1/2">
             <!-- donate amount -->
             <div class="flex items-center justify-center py-2.5 px-4 bg-[rgba(17,17,17,0.05)] rounded-lg w-fit mb-4">
               <img src="./assets/coin.png" alt="">
-              <p class="text-base font-medium ml-2 leading-5  text-[#111111B3]"><span id="current-donation">99</span> BDT</p>
+              <p class="text-base font-medium ml-2 leading-5  text-[#111111B3]"><span id="current-donation">0</span> BDT</p>
             </div>
             <!-- class="current-donation" -->
               <!-- donate amount -->
@@ -96,23 +96,6 @@
             <!-- id="donate-btn"  -->
             <button id="donate-btn" class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary w-full" >Donate Now</button>
             
-            <!-- modal -->
-            <!-- <dialog id="my_modal_1" class="modal">
-              <div class="modal-box flex flex-col justify-center items-center gap-4">
-                <h1 class="text-5xl text-black font-extrabold">Congrates!</h1>
-                <img src="./assets/coin.png" class="object-cover" alt="">
-                <p class="text-base">You Have Donated for Humankind.</p>
-                <h3 class="font-bold text-black text-2xl">Successfully</h3>
-                <div class="modal-action">
-                  <button class="btn bg-gray-200 text-lg text-black" onclick="my_modal_1.close()">Close confirmation</button>
-                </div>
-              </div>
-            </dialog> -->
-         <!-- modal -->
-            
-            
-
-
            </div>
         </div>
       </div>
@@ -121,12 +104,12 @@
 
         <!-- Donate for Flood Relief in Feni,Bangladesh -->
     <section id="section2" class="donate-section">
-      <div class=" bg-white p-8 border rounded-2xl border-solid border-[#1111111A]">
+      <div class=" bg-white md:p-8 p-5 border rounded-2xl border-solid border-[#1111111A]">
         <div class="flex  md:flex-row flex-col ">
           <img
             src="./assets/feni.png"
-            class=" rounded-xl shadow-2xl object-cover" />
-          <div class="ml-8 flex flex-col justify-between">
+            class=" rounded-xl shadow-2xl object-cover md:w-1/2" />
+          <div class="md:ml-8 md:mt-0 mt-6 flex flex-col justify-between md:w-1/2">
             <!-- donate amount -->
             <div class="flex items-center justify-center py-2.5 px-4 bg-[rgba(17,17,17,0.05)] rounded-lg w-fit mb-4">
               <img src="./assets/coin.png" alt="">
@@ -151,12 +134,12 @@
         <!-- Donate for Flood Relief in Feni,Bangladesh -->
 <!-- Aid for Injured in the Quota Movement -->
     <section id="section3" class="donate-section">
-      <div class=" bg-white p-8 border rounded-2xl border-solid border-[#1111111A]">
+      <div class=" bg-white md:p-8 p-5 border rounded-2xl border-solid border-[#1111111A]">
         <div class="flex  md:flex-row flex-col ">
           <img
             src="./assets/quota-protest.png"
-            class=" rounded-xl shadow-2xl object-cover" />
-          <div class="ml-8 flex flex-col justify-between">
+            class=" rounded-xl shadow-2xl object-cover md:w-1/2" />
+          <div class="md:ml-8 md:mt-0 mt-6 flex flex-col justify-between md:w-1/2">
             <!-- donate amount -->
             <div class="flex items-center justify-center py-2.5 px-4 bg-[rgba(17,17,17,0.05)] rounded-lg w-fit mb-4">
               <img src="./assets/coin.png" alt="">
@@ -199,7 +182,7 @@
   
   
   </main>
-  <div id="historyContainer" class="w-4/5	hidden mx-auto space-y-2">
+  <div id="historyContainer" class="md:w-10/12 px-4	hidden mx-auto space-y-2">
 
   </div>
 

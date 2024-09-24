@@ -37,34 +37,34 @@
 
 </head>
 <body class="font-Inter box-border">
-    <header id="headerPart" class="sticky backdrop-blur top-0 z-[1000] pb-4">
+    <header id="headerPart" class="sticky backdrop-blur top-0 z-[1000] md:pb-4">
         <!-- nav section start -->
-        <nav id="navbar" class="flex items-center justify-between px-7 bg-[#F9F7F3] backdrop-blur py-4">
-    
-          <button id="HomePage" class="text-xl font-semibold	leading-6	py-3 px-8 bg-primary rounded-lg text-secondary">Home</button>
+        <nav id="navbar" class="flex items-center justify-between px-4 md:px-7 bg-[#F9F7F3] backdrop-blur py-4">
+
+          <button id="HomePage" class="md:text-xl text-base font-semibold	leading-6 py-1	md:py-3 md:px-8 px-4 bg-primary rounded-lg text-secondary">Home</button>
     
           <div class="flex items-center justify-center">
-            <img src="./assets/logo.png" alt="">
-            <h3 class="text-xl font-semi bold	leading-6 text-secondary ml-4">Donate Bangladesh</h3>
+            <img class="w-[38px] md:block hidden" src="./assets/logo.png" alt="">
+            <h3 class="md:text-xl text-lg font-semibold	leading-6 text-secondary md:ml-4 ml-3">Donate Bangladesh</h3>
           </div>
     
           <div class="flex items-center justify-center">
-            <img src="./assets/coin.png" alt="">
-            <p class="text-xl font-medium ml-3 leading-6  text-[#111111B3]"><span id="account-balance">5500</span> BDT</p>
+            <img class="md:block hidden" src="./assets/coin.png" alt="">
+            <p class="md:text-xl text-base font-medium md:ml-3  leading-6  text-[#111111B3]"><span id="account-balance">5500</span> BDT</p>
           </div>
     
-      </nav>
+        </nav>
         <!-- nav section end -->
       </header>
 
     <main class="container mx-auto px-5 mt-5">
-        <section class="flex items-center gap-2 mb-8">
-            <h1 class="text-5xl font-extrabold">Important FAQ</h1>
+        <section class="flex items-center gap-2 mb-5 md:mb-8">
+            <h1 class="lg:text-5xl text-3xl font-extrabold">Important FAQ</h1>
             <img src="./assets/icons8-faq-48.png" alt="">
         </section>
         <section class="space-y-2">
             <details class="collapse border-2 bg-white border-solid border-gray-300">
-                <summary class="collapse-title text-2xl font-semibold py-6 px-8">What is the Document Object Model (DOM)?</summary>
+                <summary class="collapse-title md:text-2xl text-xl font-semibold md:py-6 md:px-8 px-5">What is the Document Object Model (DOM)?</summary>
                 <div class="collapse-content">
                   <p>DOM means Document Object Model. It has three things- html, css and javascript.All this things create DOM. DOM makes the html like an object in javascript, so that we can make interactions with javascript. This object is a model of the whole html.By using DOM, we can get all the elements of html, makes so many changes, add many actions.DOM makes the experience better between users and the website.</p>
                 </div>
@@ -72,7 +72,7 @@
 
 
               <details class="collapse border-2 bg-white border-solid border-gray-300">
-                <summary class="collapse-title text-2xl font-semibold py-6 px-8 ">How do you select an element from the DOM?</summary>
+                <summary class="collapse-title md:text-2xl text-xl font-semibold md:py-6 md:px-8 px-5 ">How do you select an element from the DOM?</summary>
                 <div class="collapse-content">
                   <p>We can select an element from the DOM  in many ways in javascript. There are many methods like - getElementById(), getElementsByClassName(),getElementsByTagName(),querySelector(),querySelectorAll() etc. First we write document then apply use a method to call the element. Example - document.getElementById('Element name');
                     
@@ -80,7 +80,7 @@
                 </div>
               </details>
               <details class="collapse border-2 bg-white border-solid border-gray-300">
-                <summary class="collapse-title text-2xl font-semibold py-6 px-8">What is event delegation in the context of the DOM, and why is it useful?</summary>
+                <summary class="collapse-title md:text-2xl text-xl font-semibold md:py-6 md:px-8 px-5">What is event delegation in the context of the DOM, and why is it useful?</summary>
                 <div class="collapse-content">
                   <p>HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.
                     For example:
@@ -101,7 +101,7 @@
 
 
               <details class="collapse border-2 bg-white border-solid border-gray-300">
-                <summary class="collapse-title text-2xl font-semibold py-6 px-8">How do you manipulate an element's attributes and styles using the DOM?</summary>
+                <summary class="collapse-title md:text-2xl text-xl font-semibold md:py-6 md:px-8 px-5">How do you manipulate an element's attributes and styles using the DOM?</summary>
                 <div class="collapse-content">
                   <p>Each Element object in the DOM has properties and methods that we can use to interact with that element.
 
