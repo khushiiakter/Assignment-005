@@ -108,17 +108,5 @@ document.getElementById('donate-btn-3').addEventListener('click', function(){
 
 });
 
-// history
-const historyTab = document.getElementById('history-tab');
-const donationTab = document.getElementById('donation-tab');
 
-historyTab.addEventListener('click', function(){
-    historyTab.classList.add('bg-primary','font-semibold','text-secondary');
-    donationTab.classList.remove('bg-primary','font-semibold','text-secondary');
-    
-    historyTab.classList.remove('border','border-solid','border-[#1111114D]');
-    donationTab.classList.add('border','border-solid','border-[#1111114D]');
-
-    document.getElementById('donationTabPart').classList.add('hidden')
-})
      

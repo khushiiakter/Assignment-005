@@ -36,9 +36,9 @@
       </script>
 </head>
 <body class="font-Inter box-border">
-  <header class="border">
+  <header class="backdrop-blur-sm sticky top-0">
     <!-- nav section start -->
-    <nav class="flex items-center justify-between px-6 bg-[#F9F7F3] py-5">
+    <nav class="flex items-center justify-between px-6 bg-[#F9F7F3] backdrop-blur-sm py-4">
 
       <button class="text-xl font-semibold	leading-6	py-3 px-8 bg-primary rounded-lg text-secondary">Blog</button>
 
@@ -54,7 +54,7 @@
 
   </nav>
     <!-- nav section end -->
-  <div class="banner-btn-section my-8">
+  <div class="banner-btn-section my-6">
     <div class="container-btn text-center space-x-4">
 
       <button id="donation-tab" class="text-xl font-semibold	leading-6	py-4 px-8 bg-primary rounded-lg text-secondary">Donation</button>
@@ -191,14 +191,15 @@
       </div>
     </div>
   </dialog>
-  <script src="./js/utilities.js"></script>
+  <script src="./js/utilities.js"></script> 
   <script src="./js/index.js"></script>
+  <script src="./js/historyTab.js"></script>
 
 
   
   
   </main>
-  <div id="historyContainer" class="w-4/5	 mx-auto space-y-2">
+  <div id="historyContainer" class="w-4/5	hidden mx-auto space-y-2">
 
   </div>
 
